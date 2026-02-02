@@ -4,7 +4,7 @@
   "name": "Honse of Holding",
   "authors": ["MrFastZombie"],
   "description": "Unofficial patch for Equus to add front side storage slots like Elks have.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "dependencies": {
     "game" : "1.21.0",
     "equus" : "1.2.0"
