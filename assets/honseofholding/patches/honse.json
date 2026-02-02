@@ -2,6 +2,30 @@
     {
         "file": "equus:shapes/entity/land/ferus/adult.json",
         "op": "addmerge",
+        "path": "/elements/0/children/0/children/0/children/5/children",
+        "value": [
+			{
+				"name": "PillionParent",
+				"from": [ -1.4, 1.2, 2.4 ],
+				"to": [ 5.1, 2.2, 8.4 ],
+				"uv": [ 0.0, 0.0 ],
+				"rotationOrigin": [ -1.4, 1.2, 2.4 ],
+				"rotationZ": -6.0,
+				"faces": {
+					"north": { "texture": "#null", "uv": [ 0.0, 4.0, 4.0, 8.0 ], "enabled": false },
+					"east": { "texture": "#null", "uv": [ 4.0, 4.0, 8.0, 8.0 ], "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1], "enabled": false },
+					"south": { "texture": "#null", "uv": [ 4.0, 4.0, 8.0, 8.0 ], "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1], "enabled": false },
+					"west": { "texture": "#null", "uv": [ 4.0, 4.0, 8.0, 8.0 ], "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1], "enabled": false },
+					"up": { "texture": "#null", "uv": [ 0.0, 0.0, 4.0, 4.0 ], "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1], "enabled": false },
+					"down": { "texture": "#null", "uv": [ 4.0, 0.0, 8.0, 4.0 ], "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1], "enabled": false }
+				}
+			}
+		],
+		"dependsOn": [{"modid": "equus"}]
+	},
+	{
+        "file": "equus:shapes/entity/land/ferus/adult.json",
+        "op": "addmerge",
         "path": "/elements/0/children/0/children/0/children",
         "value": [
             {
@@ -87,6 +111,28 @@
 				]
 			}
         ],
+        "dependsOn": [{"modid": "equus"}]
+    },
+	{
+        "file": "equus:entities/tamedwildhorse.json",
+        "op": "addmerge",
+        "path": "/behaviorConfigs/rideableaccessories/wearableSlots/5/forCategoryCodes",
+        "value": [ "pillion" ],
+        "dependsOn": [{"modid": "equus"}]
+    },
+	{
+        "file": "game:itemtypes/wearable/animal/pillion.json",
+        "op": "addmerge",
+        "path": "/attributes/attachableToEntity/seatConfigBySlotCode",
+        "value": {
+			"lowerback-ferus": {
+				"bodyYawLimit": 0,
+				"controllable": false,
+				"mountOffset": { "x": 1.15, "y": -0.33, "z": 1.33 },
+				"MountRotation": { "y": 180 },
+				"eyeOffsetX": 0
+			}
+		},
         "dependsOn": [{"modid": "equus"}]
     },
     {
